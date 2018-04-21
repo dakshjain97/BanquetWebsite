@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <title>Gallery</title>
+</head>
+<BODY bgcolor=ffffaa>
+<h1 style="color:ff6666;font-family:Monotype Corsiva;" align="center">LE DOME<BR>BANQUET HALLS</h1>
+<h3 ALIGN="center">
+    <A HREF="signin.html">HOME</A>&nbsp;||&nbsp;<A href="booking.html">BOOK HALL</A>&nbsp;||&nbsp;<A HREF="aboutus.html">ABOUT US</A>&nbsp;||&nbsp;<A HREF="gallery.html">GALLERY</A>&nbsp;||&nbsp;<A HREF="contact.html">CONTACT US</A>
+</h3>
+<br>
+<h1 style="color:800040 ;font-family:Monotype Corsiva;" align="center">GALLERY</h1>
+<div style="max-width:1000px; margin-left: 450px" onload="carousel()">
+    <img class="mySlides" src="./New%20folder/bk2.jpg" style="width:50%" alt="slide1">
+    <img class="mySlides" src="./New%20folder/GoFC2-82275-41599.jpg" style="width:50%" alt="siide2">
+    <img class="mySlides" src="./New%20folder/Banquet-Hall.jpg" style="width:50%" alt="slide3">
+    <img class="mySlides" src="./New%20folder/55b406d16a100d8e49b2657ad0d9e146.jpg" style="width:50%" alt="slide4">
+    <img class="mySlides" src="./New%20folder/seville-exterior.jpg" style="width:50%" alt="slide5">
+</div>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
+</script>
+</BODY>
+</HTML>
